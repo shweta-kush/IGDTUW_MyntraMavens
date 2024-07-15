@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    height: 40px;
+}
+
+.header .search-bar {
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+.header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.header .nav-links a,
+.header .user-options a {
+    font-weight: bold;
+    font-size: small;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.header .nav-links a:hover,
+.header .user-options a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px;
+    flex: 1;
+}
+
+.dashboard {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 300px;
+    height: calc(100vh - 60px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.dashboard h2 {
+    margin-top: 0.1cm;
+    font-size: 1cm;
+    text-align: center;
+    color: #333;
+}
+
+.dashboard button {
+    width: calc(100% / 3 - 10px);
+    margin: 2px;
+    padding: 8px;
+    border: none;
+    background-color: #f34085;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dashboard button:hover {
+    background-color: #ff5f7e;
+}
+
+.spin-wheel {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #666;
+    background-image: url('spin_wheel.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content {
+    margin-left: 340px;
+    padding: 20px;
+}
+
+.side-heading {
+    font-size:2cm;
+    font-weight: bold;
+    color: #333;
+    text-align:left;
+    padding: 10px;
+    margin-left: 10cm;
+    margin-top: 0.5cm;
+}
+
+.extra {
+    font-size: 1em;
+    color: #666;
+    padding: 20px;
+    margin-left: 10cm;
+}
+
+.competition-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:flex-start;
+    margin-left: 10cm;
+}
+.circle img {
+    width: 250px;
+    height: 100px;
+  }
+  
+
+.competition-box {
+    width: calc(33% - 40px);
+    background-color: #e643a7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.competition-box h2 {
+     font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size:0.9cm;
+    margin-top: 0.5cm;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.circle {
+    width: 50px;  
+    height: 120px; 
+    text-align: center;
+    margin: 5 auto;
+  }
+
+.competition-box p {
+    font-size:small;
+    color: #000000;
+}
+
+.offer-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 10cm;
+}
+
+.offer-text {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.offer-text p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.discount {
+    font-size: 3em;
+    font-weight: bold;
+    color: black;
+    margin-left: 10cm;
+}
+
+.off_text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.off_text1 p {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 0.5em;
+    margin-top: 50px;
+    color: black;
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: 200px;
+}
+
+.brand-logos img {
+    width: 800px;
+    height: 150px;
+    padding: 10px;
+}
+
+.aaaa img {
+    width: 250px;
+    height: 150px;
+
+}

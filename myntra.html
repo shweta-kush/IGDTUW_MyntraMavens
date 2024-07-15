@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="Myntralogo.png" alt="Myntra Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#">MEN</a>
+            <a href="#">WOMEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">HOME&LIVING</a>
+            <a href="#">BEAUTY</a>
+            <a href="#">COMPETITION</a>
+            <a href="#">SUSTAINFWD</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+        <div class="user-options">
+            <a href="#">Profile</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Bag</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="dashboard">
+            <h2>Earn Coins</h2>
+            <button>50</button>
+            <button>Gift Card</button>
+            <button>Refer</button>
+            <div class="spin-wheel" id="spinWheel" onclick="spin()"></div>
+        </div>
+    </div>
+    <div class="side-heading">
+        READY TO TAKE THE <br>CHALLENGES ?
+    </div>
+    <div class="extra">
+        Join  the  contests  for  a  chance  to  win  coins  and  exciting  gifts  by  showcasing  your  innovative  fashion-tech  solutions
+    </div>
+    <div class="competition-container">
+        <div class="competition-box">
+            <h2>DAILY OOTD</h2>
+            <div class="circle">
+                <img src="ootd.png" alt="Shirt">
+            </div>
+            
+            <p>Join our daily OOTD contest to showcase your style and win exciting prizes and a chance to be featured as
+                the fashion star of the day</p>
+        </div>
+        <div class="competition-box">
+            <h2>WARDROBE WARS</h2>
+            <div class="circle">
+                <img src="Wardrobe.png" alt="Shirt">
+            </div>
+            <p>Compete to create the most stylish outfits for your avatar from a predefined set of clothing</p>
+        </div>
+        <div class="competition-box">
+            <h2>FASHION FWD HACKS</h2>
+            <div class="circle">
+                <img src="Shoes.png" alt="Shirt">
+            </div>
+            <p>Create cutting-edge solutions at the intersection of fashion and technology, promoting sustainable and
+                forward thinking designs</p>
+        </div>
+    </div>
+    <div class="offer-section">
+        <div class="aaaa">
+            <img src="offer.png" alt="off">
+        </div>
+        <div class="brand-logos">
+            <img src="coupon.png" alt="Brand 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        function spin() {
+            const wheel = document.getElementById('spinWheel');
+            wheel.style.transform = 'rotate(0deg)';
+            setTimeout(() => {
+                wheel.style.transform = rotate(${Math.random() * 3600 + 360}deg);
+            }, 100);
+        }
+    </script>
+</body>
+
+</html>
