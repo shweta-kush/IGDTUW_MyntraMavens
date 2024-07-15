@@ -1,0 +1,167 @@
+.nav-bar1 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 98px;
+}
+.myntra-logo-icon {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  width: 102px;
+  height: 75px;
+  object-fit: cover;
+}
+.men-women-kids {
+  position: absolute;
+  top: 33px;
+  left: 141px;
+  white-space: pre-wrap;
+  text-shadow: 0.7px 0 0#000, 0 0.7px 0#000, -0.7px 0 0#000, 0-0.7px 0#000;
+}
+.searchbox {
+  border: 0;
+  outline: 0;
+  background-color: rgba(217, 217, 217, 0.43);
+  position: absolute;
+  top: 17px;
+  left: 924px;
+  width: 342px;
+  height: 55px;
+}
+.searchicon {
+  position: absolute;
+  height: 31.63%;
+  width: 1.67%;
+  top: 29.18%;
+  right: 33.54%;
+  bottom: 39.18%;
+  left: 64.79%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.profileicon,
+.vector {
+  border: 0;
+  height: 31.63%;
+  width: 1.67%;
+}
+.profileicon {
+  position: absolute;
+  top: 37.96%;
+  right: 9.24%;
+  bottom: 30.41%;
+  left: 89.1%;
+  background-color: #231f20;
+}
+.vector {
+  top: 39.8%;
+  right: 6.04%;
+  bottom: 28.57%;
+  left: 92.29%;
+  background-color: var(--color-black);
+}
+.bag,
+.nav-bar,
+.vector {
+  position: absolute;
+}
+.bag {
+  border: 0;
+  height: 31.63%;
+  width: 1.67%;
+  top: 36.12%;
+  right: 2.78%;
+  bottom: 32.24%;
+  left: 95.56%;
+  background-color: var(--color-black);
+}
+.nav-bar {
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 98px;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.bg-foot,
+.bg-top {
+  position: absolute;
+  top: 1332px;
+  left: 21px;
+  background: linear-gradient(90deg, #e00c8f, #0aaa54);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1398px;
+  height: 232px;
+}
+.bg-top {
+  top: 118px;
+  left: 4px;
+  width: 1399px;
+  height: 222px;
+}
+.clothes-1-icon,
+.clothes2-1-icon {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 392px;
+  height: 202px;
+  object-fit: cover;
+}
+.clothes2-1-icon {
+  top: 0;
+  left: 1036px;
+  width: 446px;
+  height: 261px;
+}
+.blank-line {
+  margin: 0;
+}
+.sustainfwd {
+  margin: 0;
+  font-size: 21px;
+}
+.giveaway-your-clothes-to-myntr {
+  margin: 0;
+  font-size: 36px;
+}
+.sustainable-swag-is {
+  margin: 0;
+  font-size: 20px;
+}
+.heading {
+  position: absolute;
+  top: 106px;
+  left: 285px;
+  display: inline-block;
+  width: 880px;
+  height: 228px;
+}
+.clothes {
+  position: absolute;
+  top: 98px;
+  left: -18px;
+  width: 1458px;
+  height: 261px;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.background {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 1564px;
+  overflow: hidden;
+}
