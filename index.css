@@ -1,342 +1,59 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-:root {
-  --primary-bg: #e7cfb1;
-  --yellow: #f3c77c;
-  --black-bg: #000000;
-  --white-bg: #ffffff;
-}
-
-* {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
   padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-#main {
-  width: 100%;
-  position: relative;
-  /* background-color: var(--white-bg); */
-  /* overflow-x: ; */
-}
-
-header {
-  padding: 20px 24px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  justify-content:flex-start;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.myntra-logo {
-  width: 3rem;
-  height: 3rem;
+.header .logo img {
+  height: 40px;
 }
 
-#menu {
-  display: flex;
-  flex-direction: row;
-  gap: 5%;
-  align-items: center;
-  justify-content: right;
-  list-style: none;
+.header .search-bar {
+  flex-grow: 1;
+  margin: 0 5px;
+}
+
+.header .search-bar input {
   width: 100%;
-  padding-inline: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
 }
 
-#menu li {
-  overflow: hidden;
-}
-
-#menu li a {
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+.header .nav-links a,
+.header .user-options a {
+  font-weight: bold;
+  font-size: small;
+  color: black;
   text-decoration: none;
-  color: var(--primary-bg);
+  margin: 0 10px;
+  padding: 5px 10px;
 }
 
-#responsive_menu {
-  position: absolute;
-  top: 100%;
-  right: -100%;
-  width: 100%;
-  height: 100dvh;
-  background: var(--black-bg);
-  padding: 24px;
-  z-index: 99;
+.header .nav-links a:hover,
+.header .user-options a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
-#responsive_menu li {
-  overflow-y: hidden;
-  margin-block: 12px;
-}
+/* nav complete */
 
-#responsive_menu .link {
-  text-transform: uppercase;
-  display: block;
-  text-decoration: none;
-  color: var(--primary-bg);
-  font-size: clamp(20px, 12.5vw, 50px);
-  font-family: "Open Sans", sans-serif;
-}
-
-@media screen and (max-width: 1024px) {
-  #menu {
-    display: none;
-  }
-  .hamburger {
-    display: inline-block;
-  }
-}
-
-.hero_text_container {
-  width: 100vw;
-  min-height: 65dvh;
+.main-content .banner{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "arial";
-  color: var(--white-bg);
-  z-index: 1;
-}
+  /* flex-direction: row; */
 
-ul.hero_text_title {
-  list-style: none;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.hero_text_title li {
-  font-size: 36vw;
-  font-weight: 900;
-  padding-inline: 2px;
-  letter-spacing: -6px;
-  color: var(--yellow);
-  overflow-y: hidden;
-}
-
-.hero_text_title li span {
-  display: block;
-  font-family: "Roboto", sans-serif;
-}
-
-.hero_text_tagline {
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(3vw, 36px, 24px);
-  font-weight: 400;
-  text-align: center;
-  color: var(--yellow);
-  overflow-y: hidden;
-}
-
-.hero_text_tagline span {
-  display: block;
-}
-
-@media screen and (max-width: 720px) {
-  .hero_text_container {
-    width: 100vw;
-    min-height: 60dvh;
-  }
-}
-
-/*  video container section */
-#video_container {
-  margin-top: 24px;
-  width: 100%;
-  min-height: 67dvh;
-  background: var(--black-bg);
-  display: flex;
-  justify-content: center;
-}
-
-#video_container video {
-  width: 50%;
-  height: auto;
-}
-
-@media screen and (max-width: 720px) {
-  #video_container {
-    margin-top: 12px;
-    width: 100vw;
-    margin-top: 24px;
-  }
-}
-
-/* nav completed */
-.nav-bar1 {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--color-white);
-  width: 1440px;
-  height: 98px;
-}
-.myntra-logo-icon {
-  position: absolute;
-  top: 7px;
-  left: 20px;
-  width: 102px;
-  height: 75px;
-  object-fit: cover;
-}
-.men-women-kids {
-  position: absolute;
-  top: 33px;
-  left: 141px;
-  white-space: pre-wrap;
-  text-shadow: 0.7px 0 0#000, 0 0.7px 0#000, -0.7px 0 0#000, 0-0.7px 0#000;
-}
-.searchbox {
-  border: 0;
-  outline: 0;
-  background-color: rgba(217, 217, 217, 0.43);
-  position: absolute;
-  top: 17px;
-  left: 924px;
-  width: 342px;
-  height: 55px;
-}
-.searchicon {
-  position: absolute;
-  height: 31.63%;
-  width: 1.67%;
-  top: 29.18%;
-  right: 33.54%;
-  bottom: 39.18%;
-  left: 64.79%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.profileicon,
-.vector {
-  border: 0;
-  height: 31.63%;
-  width: 1.67%;
-}
-.profileicon {
-  position: absolute;
-  top: 37.96%;
-  right: 9.24%;
-  bottom: 30.41%;
-  left: 89.1%;
-  background-color: #231f20;
-}
-.vector {
-  top: 39.8%;
-  right: 6.04%;
-  bottom: 28.57%;
-  left: 92.29%;
-  background-color: var(--color-black);
-}
-.bag,
-.nav-bar,
-.vector {
-  position: absolute;
-}
-.bag {
-  border: 0;
-  height: 31.63%;
-  width: 1.67%;
-  top: 36.12%;
-  right: 2.78%;
-  bottom: 32.24%;
-  left: 95.56%;
-  background-color: var(--color-black);
-}
-.nav-bar {
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 1440px;
-  height: 98px;
-  text-align: left;
-  font-size: var(--font-size-lg);
-  color: var(--color-black);
-  font-family: var(--font-inter);
-}
-.bg-foot,
-.bg-top {
-  position: absolute;
-  top: 1332px;
-  left: 21px;
-  background: linear-gradient(90deg, #e00c8f, #0aaa54);
-  border: 1px solid var(--color-black);
-  box-sizing: border-box;
-  width: 1398px;
-  height: 232px;
-}
-.bg-top {
-  top: 118px;
-  left: 4px;
-  width: 1399px;
-  height: 222px;
-}
-.clothes-1-icon,
-.clothes2-1-icon {
-  position: absolute;
-  top: 18px;
-  left: 0;
-  width: 392px;
-  height: 202px;
-  object-fit: cover;
-}
-.clothes2-1-icon {
-  top: 0;
-  left: 1036px;
-  width: 446px;
-  height: 261px;
-}
-.blank-line {
-  margin: 0;
-}
-.sustainfwd {
-  margin: 0;
-  font-size: 21px;
-}
-.giveaway-your-clothes-to-myntr {
-  margin: 0;
-  font-size: 36px;
-}
-.sustainable-swag-is {
-  margin: 0;
-  font-size: 20px;
-}
-.heading {
-  position: absolute;
-  top: 106px;
-  left: 285px;
-  display: inline-block;
-  width: 880px;
-  height: 228px;
-}
-.clothes {
-  position: absolute;
-  top: 98px;
-  left: -18px;
-  width: 1458px;
-  height: 261px;
-  text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--color-black);
-  font-family: var(--font-inter);
-}
-.background {
-  width: 100%;
-  position: relative;
-  background-color: var(--color-white);
-  height: 1564px;
-  overflow: hidden;
 }
