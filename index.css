@@ -51,9 +51,24 @@ body {
 }
 
 /* nav complete */
+.content div{
+  border: 1px solid black;
+}
 
 .main-content .banner{
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
+  /* justify-content:flex-start; */
+  border: 1px solid black;
+  margin-top: 5rem ;
+  width: 100vw;
 
+
+}
+
+.main-content .banner img{
+  height: 15rem;
+}
+.main-content .banner img{
+  height: 15rem;
 }
