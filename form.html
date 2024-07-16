@@ -29,5 +29,84 @@
             <a href="#">Bag</a>
         </div>
     </header>
+
+    <section class="content">
+        <div class="form-container">
+                <div class="form-left">
+                <form action="/action_page.php">
+                    <label for="cus_name">Name:</label><br>
+                        <input type="text" id="cus_name" name="cus_name"><br>
+
+                    <label for="no-of-clothes">No. of clothes giving:</label><br>
+                        <input type="radio" id="" name="no-of-clothes" />
+                        <label >1-5</label>
+                        
+                        <input type="radio" id="" name="no-of-clothes" />
+                        <label >6-10</label>
+                        
+                        <input type="radio" id="" name="no-of-clothes" />
+                        <label >11+</label>
+
+                    <label for="category">Select Clothing category:</label><br>
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <label for="scales">Top</label>
+
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <label for="scales">Bottom</label>
+
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <label for="scales">Dresses</label>
+
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <label for="scales">Outerwear</label>
+
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <label for="scales">Accessories</label>
+
+                        <input type="checkbox" id="scales" name="scales" checked />
+                        <label for="scales">Others</label>
+
+                    
+                </form> 
+            </div>
+
+            <div class="form-right">
+                <form action="/action_page.php">
+                    <label for="br_name">Brand Name:</label><br>
+                        <input type="text" id="br_name" name="br_name" ><br>
+
+                    <label for="condition">Average condition of clothes</label><br>
+                        <input type="radio" id="condition" name="cloth-condition" />
+                        <label >Excellent</label>
+                        
+                        <input type="radio" id="condition" name="cloth-condition" />
+                        <label >Good</label>
+                        
+                        <input type="radio" id="condition" name="cloth-condition" />
+                        <label >Fair</label>
+
+                        <input type="radio" id="condition" name="cloth-condition" />
+                        <label >Poor</label>
+                    
+                    <label for="flaws">Are there any major flaws or stains</label><br>
+                        <input type="radio" id="yes" name="flaws" />
+                        <label >Yes</label>
+                        
+                        <input type="radio" id="no" name="flaws" />
+                        <label >No</label>
+                        
+                    <label for="photo">Upload photos of you clothes</label><br>
+                        <input type="file" id="photo" name="photo" accept="image/png, image/jpeg" multiple />
+
+                </form>
+
+            </div>
+        </div>
+        <div class="submit-button">
+            <input type="submit" value="Submit">
+
+        </div>
+
+    </section>
 </body>
 </html>
