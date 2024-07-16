@@ -51,9 +51,6 @@ body {
 }
 
 /* nav complete */
-.content div{
-  border: 1px solid black;
-}
 
 .main-content .banner{
   display: flex;
@@ -73,7 +70,6 @@ body {
 }
 
 
-
 .main-content .first{
   display: flex;
   flex-direction: row;
@@ -85,6 +81,11 @@ body {
 .main-content .first p{
   margin: 1rem;
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  
 }
 .main-content .first img{
   margin: 1rem;
@@ -96,6 +97,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+
+.main-content .second .circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
