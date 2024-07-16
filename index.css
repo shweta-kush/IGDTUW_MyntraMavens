@@ -52,6 +52,14 @@ body {
 
 /* nav complete */
 
+.bg{
+  background-image: url(bg-leaf.png);
+  background-size: 45% 95%;
+  background-repeat:no-repeat;
+  background-position: center center;
+
+}
+
 .main-content .banner{
   display: flex;
   flex-direction: row;
@@ -80,6 +88,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* flex-wrap: wrap; */
   align-items: center;
   margin-top: 1rem;
 }

@@ -5,6 +5,7 @@ body {
   }
   
   .header {
+    z-index: 5;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,17 +57,43 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   background-image: linear-gradient(to right, #E50890 , #09AB54);
-  border: 1px solid red;
+  height: 13rem;
+  padding-bottom: -2rem;
+  position: relative;
+}
+
+#f-1{
+  position: absolute;
+  left: 0rem;
+  top: -0.6rem;
+  height: 10rem;
+  z-index: 2;
+}
+
+#f-2{
+  position: absolute;
+  right: 0rem;
+  top: -0.6rem;
+  height: 10rem;
 }
 
 .heading {
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  background: white;
   text-align: center;
-  width: 70%;
+  width: 60%;
+  position: absolute;
+  line-height: normal;
+  bottom: 0;
+}
+h1{
+  font-size:xx-large;
+}
+h6, h1, h5{
+  margin: 1rem;
 }
 
 
