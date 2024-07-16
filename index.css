@@ -55,25 +55,24 @@ body {
 .main-content .banner{
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
-  border: 1px solid black;
+  align-items: center;
   margin-top: 5rem ;
-  width: 100vw;
-  /* padding: 0rem 1rem 0rem 1rem; */
+  width: 100%;
   padding-top: 1rem;
   
   
 }
 
-.main-content .banner a{
-  /* width: 100vw; */
-  border: 4px solid red;
-}
-
 .main-content .banner img{
-  border: 1px solid black;
   height: 15rem;
   width: 100%;
+}
+
+.main-content .banner #sec-banner{
+  width: 40vw;
+}
+.main-content .banner #fir-banner{
+  width: 60vw;
 }
 
 
